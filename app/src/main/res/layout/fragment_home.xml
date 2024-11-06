@@ -1,0 +1,46 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       > <!-- Use a custom background color -->
+
+        <!-- ViewPager2 for sliding images -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="220dp" />
+
+        <!-- Section Title -->
+        <TextView
+            android:background="@color/white"
+            android:textSize="23sp"
+            android:text="Current Team"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/your_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- RecyclerView for displaying employees -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/employeeRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"/>
+    </LinearLayout>
+</FrameLayout>

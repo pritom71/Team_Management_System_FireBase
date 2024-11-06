@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1042547337509",
+    "project_id": "fir-all-libraries",
+    "storage_bucket": "fir-all-libraries.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042547337509:android:e28b6f952fe473a67212cc",
+        "android_client_info": {
+          "package_name": "com.stamasoft.ptithom.firebase_all_libraries"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcQyc5WPOfIz4WTsAlVMVIbxhQX5RgdAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

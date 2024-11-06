@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EFEBEB">
+
+    <TextView
+        android:text="Edit Details"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/your_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Name Field -->
+    <EditText
+        android:id="@+id/et_name"
+        android:hint="New Name"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPersonName"
+        android:textColor="#212121"
+        android:textColorHint="#757575" />
+
+    <!-- Email Field -->
+    <EditText
+        android:id="@+id/et_email"
+        android:hint="New Email"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textEmailAddress"
+        android:textColor="#212121"
+        android:textColorHint="#757575" />
+
+    <!-- Phone Number Field -->
+    <EditText
+        android:id="@+id/et_phone"
+        android:hint="New Phone Number"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="phone"
+        android:textColor="#212121"
+        android:textColorHint="#757575" />
+
+    <!-- Designation Field -->
+    <EditText
+        android:id="@+id/et_designation"
+        android:hint="New Designation"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="text"
+        android:textColor="#212121"
+        android:textColorHint="#757575" />
+
+    <!-- Gender Spinner -->
+    <Spinner
+        android:id="@+id/spinner_update_gender"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_spinner"
+        android:padding="12dp"
+        android:entries="@array/gender_options" />
+
+    <!-- Blood Group Spinner -->
+    <Spinner
+        android:id="@+id/spinner_update_blood_group"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_spinner"
+        android:padding="12dp"
+        android:entries="@array/blood_group_options" />
+
+    <!-- Employee Image -->
+    <ImageView
+        android:id="@+id/iv_employee_image"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/boy"
+        android:contentDescription="Employee Image"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Update Button -->
+    <Button
+        android:id="@+id/bt_update"
+        android:text="Update"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/lavender"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button" />
+
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/bt_delete"
+        android:text="Delete"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:backgroundTint="#D50000"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button" />
+</LinearLayout>
